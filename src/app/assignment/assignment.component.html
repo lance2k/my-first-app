@@ -1,0 +1,3 @@
+<button class="btn btn-primary" (click)="showDetails()">Display Details</button>
+<p class="h1" *ngIf="displayFlag">Secret Password = tuna</p>
+<p *ngFor="let click of btnClicks; let i = index" [ngStyle]="{backgroundColor: i > 4 ? 'blue' : '' }" [ngClass]="{'white-text': i > 4}" >{{ click }}</p>
